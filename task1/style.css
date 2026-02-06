@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 10px;
+}
+
+h1 {
+    color: darkslategray;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: gray;
+    text-align: center;
+    font-size: 26px;
+}
+
+h3 {
+    color: gray;
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+p {
+    color: darkgray;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#homePage {
+    background-color: whitesmoke;
+}
+
+#header {
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#collegeName {
+    color: black;
+    margin-top: 10px;
+}
+
+#academicYear {
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+ul {
+    background-color: aliceblue;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+li {
+    color: darkslategray;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #000;
+    margin: 20px 0;
+}

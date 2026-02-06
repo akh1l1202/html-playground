@@ -1,0 +1,40 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: darkblue;
+}
+
+div {
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+div:first-of-type {
+    background-color: lightcyan;
+}
+
+div:nth-of-type(2) {
+    background-color: lightpink;
+}
+
+div:last-of-type {
+    background-color: lightyellow;
+}
+
+li {
+    margin: 5px 0;
+    padding: 5px;
+}
+
+dd {
+    margin-left: 20px;
+    color: navy;
+}
