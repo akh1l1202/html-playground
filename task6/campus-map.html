@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Campus Map</title>
+    <link rel="stylesheet" href="map.css">
 </head>
 
 <body>
@@ -11,29 +12,65 @@
 <h1>Interactive Campus Map</h1>
 <p>Click on the areas (Left side for Auditorium, Right side for Library).</p>
 
-<img src="campus.jpg"
-     alt="College Campus Layout"
-     usemap="#campusmap"
-     width="600"
-     height="400">
+    <figure class="map-figure">
+    <img class="campus-map"
+         src="campus.jpg"
+         alt="College Campus Layout"
+         usemap="#campusmap">
+    <p>Campus map (click left or right).</p>
+</figure>
 
 <map name="campusmap">
 
-    <!-- Auditorium -->
     <area shape="rect"
           coords="0,0,300,400"
-          href="event-details.html"
+            href="event-details.html"
+            data-image="auditorium.jpg"
           alt="Auditorium"
           title="Go to Auditorium">
 
-    <!-- Library -->
     <area shape="rect"
           coords="300,0,600,400"
           href="about-dept.html"
+          data-image="library.jpg"
           alt="Library"
           title="Go to Library">
 
 </map>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var img = document.querySelector('.campus-map');
+    var areas = document.querySelectorAll('map[name="campusmap"] area[data-image]');
+    function basename(path) {
+        return path.split('/').pop().split('\\\\').pop();
+    }
+    areas.forEach(function (area) {
+        area.addEventListener('click', function (e) {
+            e.preventDefault();
+            var target = area.getAttribute('data-image');
+            if (!target || !img) return;
+            var current = basename(img.src);
+
+            if (target === 'auditorium.jpg') {
+                if (current === 'library.jpg') {
+                    img.src = 'campus.jpg';
+                } else {
+                    img.src = 'auditorium.jpg';
+                }
+            } else if (target === 'library.jpg') {
+                if (current === 'auditorium.jpg') {
+                    img.src = 'campus.jpg';
+                } else {
+                    img.src = 'library.jpg';
+                }
+            } else {
+                img.src = target;
+            }
+        });
+    });
+});
+</script>
 
 </body>
 </html>

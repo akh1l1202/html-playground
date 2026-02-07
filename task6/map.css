@@ -1,0 +1,41 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    color: darkslategray;
+}
+
+.map-figure {
+    max-width: 90%;
+    margin: 30px auto;
+    text-align: center;
+    background-color: lightcyan;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.campus-map {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    border: 6px solid lightblue;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.map-figure figcaption {
+    margin-top: 8px;
+    color: darkblue;
+    font-style: italic;
+    font-size: 14px;
+}

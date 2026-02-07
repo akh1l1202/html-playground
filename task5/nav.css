@@ -1,10 +1,8 @@
-/* Body */
 body {
     font-family: Arial;
     margin: 0;
 }
 
-/* Main heading */
 h1 {
     text-align: center;
     background-color: lavender;
@@ -12,7 +10,6 @@ h1 {
     margin: 0;
 }
 
-/* Navigation bar with sticky positioning */
 .nav-bar {
     background-color: lightblue;
     padding: 15px;
@@ -21,7 +18,6 @@ h1 {
     z-index: 100;
 }
 
-/* Flexbox for horizontal menu */
 .nav-bar ul {
     display: flex;
     list-style: none;
@@ -29,13 +25,10 @@ h1 {
     padding: 0;
     gap: 15px;
 }
-
-/* Menu items */
 .nav-bar li {
     margin: 0;
 }
 
-/* Links styling */
 .nav-bar a {
     text-decoration: none;
     color: darkblue;
@@ -45,35 +38,29 @@ h1 {
     font-weight: bold;
 }
 
-/* Hover effect on links */
 .nav-bar a:hover {
     background-color: lightcyan;
     color: black;
 }
 
-/* Other divs */
 div {
     padding: 15px;
     margin: 10px;
 }
 
-/* First content div */
 div:nth-of-type(2) {
     background-color: lightcyan;
 }
 
-/* Second content div */
 div:nth-of-type(3) {
     background-color: lightyellow;
 }
 
-/* Paragraphs */
 p {
     margin: 10px 0;
     color: darkblue;
 }
 
-/* Links in content */
 a {
     color: blue;
 }
