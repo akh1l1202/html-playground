@@ -8,12 +8,18 @@
 
 <h1>Computer Engineering Department</h1>
 
-<div style="background-color: #eef; padding: 10px;">
+<button onclick="toggleVision()">Show / Hide Vision</button>
+<button onclick="toggleMission()">Show / Hide Mission</button>
+<button onclick="toggleHOD()">Toggle HoD Message</button>
+
+<br><br>
+
+<div id="vision" style="background-color: #eef; padding: 10px;">
     <h3>Vision</h3>
     <p>To develop <strong>skilled engineers</strong> for the industry.</p>
 </div>
 
-<div style="background-color: #efe; padding: 10px;">
+<div id="mission" style="background-color: #efe; padding: 10px;">
     <h3>Mission</h3>
     <p>Provide quality education with <em>practical knowledge</em>.</p>
 </div>
@@ -23,10 +29,12 @@
     <p>Well-equipped labs and <u>modern classrooms</u>.</p>
 </div>
 
-<blockquote>
+<blockquote id="hod">
     "Our department focuses on both academics and innovation."
     <br>— HoD, Computer Engineering
 </blockquote>
+
+<script src="about-dept.js"></script>
 
 </body>
 </html>
