@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="validate.js"></script>
+</head>
+
+<body>
+
+<h1>Event Registration Form</h1>
+
+<form method="get" action="request_registration.php" onsubmit="return validateForm();">
+
+    <p>
+        Student Name:
+        <input type="text" name="student_name" size="40">
+    </p>
+
+    <p>
+        Email:
+        <input type="email" name="email" size="40">
+    </p>
+
+    <p>
+        Roll Number:
+        <input type="text" name="roll" size="40">
+    </p>
+
+    <p>
+        Select Event:
+        <select name="event">
+            <option value="Coding">Coding</option>
+            <option value="Robotics">Robotics</option>
+            <option value="Design">Design</option>
+        </select>
+    </p>
+
+    <p>
+        Gender:
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+    </p>
+
+    <p>
+        Skills:
+        <input type="checkbox" name="skills[]" value="C++"> C++
+        <input type="checkbox" name="skills[]" value="Python"> Python
+        <input type="checkbox" name="skills[]" value="Java"> Java
+    </p>
+
+    <p>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </p>
+
+</form>
+
+</body>
+</html>
