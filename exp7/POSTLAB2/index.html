@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Search Catalog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <div class="catalog-container">
+        <header>
+            <h1>Product Catalog</h1>
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" placeholder="Search for products (e.g. Laptop, Mouse)..." autocomplete="off">
+                <div id="searchLoader" class="loader"></div>
+            </div>
+        </header>
+
+        <main id="resultsGrid" class="results-grid">
+            <div class="placeholder-text">Type something to explore our catalog...</div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
